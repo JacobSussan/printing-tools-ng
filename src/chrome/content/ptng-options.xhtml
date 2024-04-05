@@ -214,6 +214,11 @@
 						<html:div style="width: 26px;"></html:div>
 							<menulist id="fontlist" style="min-width: 265px"/>
 							<label value="&withSize;"/>
+							<html:input id="print_copies" is="setting-number" 
+									data-setting-name="copies" min="10" max="200" 
+									class="copy-count-input photon-number2" 
+									aria-errormessage="error-invalid-copies" required="" 
+									type="number" autocomplete="off" value="1"/>
 							<menulist id="fontsize">
 								<menupopup>
 									<menuitem label="7" value="7" id="x7" />

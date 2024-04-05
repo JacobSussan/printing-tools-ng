@@ -400,6 +400,7 @@ function savePMDprefs() {
 
 
 	prefs.setIntPref("extensions.printingtoolsng.date.long_format_type", document.getElementById("dateLongRG").selectedIndex);
+	prefs.setIntPref("extensions.printingtoolsng.print_copies", document.getElementById("print_copies").value);
 
 	prefs.setStringPref("extensions.printingtoolsng.date.custom_format", document.getElementById("customDate").value);
 	var size = document.getElementById("citeSize").selectedItem.id.replace("s", "");

@@ -85,6 +85,8 @@ var printingtools = {
 	PrintSelectedMessages: async function (options) {
 
 		var dbgopts = this.prefs.getCharPref("extensions.printingtoolsng.debug.options");
+		var numberOfCopies = this.prefs.getIntPref("extensions.printingtoolsng.print_copies");
+
 		printingtools.current = 0;
 		printingtools.msgUris = [];
 
@@ -97,7 +99,9 @@ var printingtools = {
 				console.log(realMessage)
 			try {
 				let uri = realMessage.folder.getUriForMsg(realMessage);
-				printingtools.msgUris.push(uri)
+				for (var i = 0; i < numberOfCopies; i++) {
+					printingtools.msgUris.push(uri)
+				}
 			} catch { }
 		});
 

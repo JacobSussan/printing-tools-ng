@@ -54,5 +54,6 @@ pref("extensions.printingtoolsng.pdf.filename.latinize", false);
 pref("extensions.printingtoolsng.pdf.filename.filter_emojis_and_symbols", false);
 pref("extensions.printingtoolsng.pdf.filename.max_subject_len", 150);
 pref("extensions.printingtoolsng.pdf.filename.max_filename_len", 249);
+pref("extensions.printingtoolsng.print_copies", 1);
 
 
